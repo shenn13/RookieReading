@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RECOMEND_TEXT" id="KGk-i7-Jjw" customClass="RecomendTextBookCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="e8x-jk-x7s">
+                        <rect key="frame" x="12" y="10" width="75.5" height="89.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="e8x-jk-x7s" secondAttribute="height" multiplier="0.84" id="DS9-Mz-8Ou"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_tag_shudan" translatesAutoresizingMaskIntoConstraints="NO" id="eVt-Su-vnF">
+                        <rect key="frame" x="62.5" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="BLb-4x-VHv"/>
+                            <constraint firstAttribute="height" constant="25" id="x3T-uh-MWc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="书单名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1T-4z-Lcl">
+                        <rect key="frame" x="97.5" y="10" width="210.5" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.5" id="4MQ-BO-X7C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共0本书 | 0 人收藏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irF-Rl-itu">
+                        <rect key="frame" x="97.5" y="83" width="210.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="lkp-IM-noQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEv-Eh-XL3">
+                        <rect key="frame" x="97.5" y="34.5" width="210.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="PXV-TT-9iA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.70196078429999997" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixz-oR-O1T">
+                        <rect key="frame" x="97.5" y="54.5" width="210.5" height="24.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="z1T-4z-Lcl" secondAttribute="trailing" constant="12" id="1Pj-Nd-Jyt"/>
+                    <constraint firstItem="eVt-Su-vnF" firstAttribute="top" secondItem="e8x-jk-x7s" secondAttribute="top" id="1fl-NY-mwN"/>
+                    <constraint firstItem="ixz-oR-O1T" firstAttribute="leading" secondItem="e8x-jk-x7s" secondAttribute="trailing" constant="10" id="2Ez-OG-nCW"/>
+                    <constraint firstItem="irF-Rl-itu" firstAttribute="leading" secondItem="e8x-jk-x7s" secondAttribute="trailing" constant="10" id="DxC-H1-WL6"/>
+                    <constraint firstItem="z1T-4z-Lcl" firstAttribute="top" secondItem="e8x-jk-x7s" secondAttribute="top" id="ESt-fG-U4O"/>
+                    <constraint firstAttribute="trailing" secondItem="QEv-Eh-XL3" secondAttribute="trailing" constant="12" id="H0i-Eg-Au8"/>
+                    <constraint firstItem="irF-Rl-itu" firstAttribute="bottom" secondItem="e8x-jk-x7s" secondAttribute="bottom" id="JCE-3a-b3m"/>
+                    <constraint firstItem="QEv-Eh-XL3" firstAttribute="top" secondItem="z1T-4z-Lcl" secondAttribute="bottom" constant="4" id="Krm-wE-frl"/>
+                    <constraint firstAttribute="bottom" secondItem="e8x-jk-x7s" secondAttribute="bottom" constant="10" id="OzR-zS-m15"/>
+                    <constraint firstItem="QEv-Eh-XL3" firstAttribute="leading" secondItem="e8x-jk-x7s" secondAttribute="trailing" constant="10" id="S8T-QG-bPX"/>
+                    <constraint firstAttribute="trailing" secondItem="ixz-oR-O1T" secondAttribute="trailing" constant="12" id="Txu-sx-Wbm"/>
+                    <constraint firstItem="eVt-Su-vnF" firstAttribute="trailing" secondItem="e8x-jk-x7s" secondAttribute="trailing" id="Ufg-tY-rhZ"/>
+                    <constraint firstItem="ixz-oR-O1T" firstAttribute="top" secondItem="QEv-Eh-XL3" secondAttribute="bottom" constant="4" id="W8d-yb-yo7"/>
+                    <constraint firstItem="irF-Rl-itu" firstAttribute="top" secondItem="ixz-oR-O1T" secondAttribute="bottom" constant="4" id="WVb-eq-EY9"/>
+                    <constraint firstAttribute="trailing" secondItem="irF-Rl-itu" secondAttribute="trailing" constant="12" id="Yyu-wF-qCA"/>
+                    <constraint firstItem="e8x-jk-x7s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="tie-5i-dT2"/>
+                    <constraint firstItem="z1T-4z-Lcl" firstAttribute="leading" secondItem="eVt-Su-vnF" secondAttribute="trailing" constant="10" id="vFR-M6-EzU"/>
+                    <constraint firstItem="e8x-jk-x7s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="yzj-kK-r85"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bookName" destination="z1T-4z-Lcl" id="fAa-GE-pWu"/>
+                <outlet property="labAuthor" destination="QEv-Eh-XL3" id="4Ko-I4-T5W"/>
+                <outlet property="labDes" destination="ixz-oR-O1T" id="LpB-Sz-kFL"/>
+                <outlet property="labPraiseCount" destination="irF-Rl-itu" id="AkX-3j-06Y"/>
+                <outlet property="showImage" destination="e8x-jk-x7s" id="B0G-Zp-m8u"/>
+                <outlet property="tagImage" destination="eVt-Su-vnF" id="0xn-9U-u6r"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="319"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="book_tag_shudan" width="35" height="35"/>
+        <image name="placeholder" width="80" height="60"/>
+    </resources>
+</document>

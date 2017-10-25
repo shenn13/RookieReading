@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RegisterInputView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kho-2v-od9" userLabel="lineOne">
+                    <rect key="frame" x="0.0" y="50" width="320" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="eqU-P4-UF4"/>
+                    </constraints>
+                </view>
+                <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNl-13-Hjb" userLabel="lineTwo">
+                    <rect key="frame" x="0.0" y="99.5" width="320" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="4Mp-f5-kin"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_tweet_hot" translatesAutoresizingMaskIntoConstraints="NO" id="ghE-or-4TW">
+                    <rect key="frame" x="12" y="12" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ghE-or-4TW" secondAttribute="height" id="SpN-yR-cmW"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="设置密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="L10-BL-e2S">
+                    <rect key="frame" x="50" y="112" width="258" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_project_member" translatesAutoresizingMaskIntoConstraints="NO" id="BcH-Dh-H7C">
+                    <rect key="frame" x="12" y="62.5" width="25" height="25"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="您的手机号码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BvM-pU-Ifl">
+                    <rect key="frame" x="49" y="62" width="259" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_project_activity" translatesAutoresizingMaskIntoConstraints="NO" id="5Yt-Mc-M3g">
+                    <rect key="frame" x="12" y="112" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="5Yt-Mc-M3g" secondAttribute="height" multiplier="1:1" id="lbg-bJ-uww"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="你的昵称" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uhN-V7-ed7">
+                    <rect key="frame" x="50" y="12" width="258" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ghE-or-4TW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="0O7-dA-dBT"/>
+                <constraint firstItem="BcH-Dh-H7C" firstAttribute="width" secondItem="BcH-Dh-H7C" secondAttribute="height" id="4fy-pl-5iY"/>
+                <constraint firstItem="BvM-pU-Ifl" firstAttribute="top" secondItem="kho-2v-od9" secondAttribute="bottom" constant="12" id="8V7-Q2-Q1h"/>
+                <constraint firstAttribute="bottom" secondItem="L10-BL-e2S" secondAttribute="bottom" constant="12" id="9cG-Nv-rde"/>
+                <constraint firstItem="BcH-Dh-H7C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Aii-js-aLY"/>
+                <constraint firstAttribute="trailing" secondItem="uhN-V7-ed7" secondAttribute="trailing" constant="12" id="Buy-39-Jkb"/>
+                <constraint firstItem="L10-BL-e2S" firstAttribute="top" secondItem="PNl-13-Hjb" secondAttribute="bottom" constant="12" id="Cy7-6V-U4X"/>
+                <constraint firstItem="ghE-or-4TW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="JO0-2u-NxH"/>
+                <constraint firstItem="BvM-pU-Ifl" firstAttribute="leading" secondItem="BcH-Dh-H7C" secondAttribute="trailing" constant="12" id="MkJ-g1-J9Y"/>
+                <constraint firstAttribute="bottom" secondItem="PNl-13-Hjb" secondAttribute="bottom" constant="50" id="UAr-ue-ku3"/>
+                <constraint firstItem="PNl-13-Hjb" firstAttribute="top" secondItem="BcH-Dh-H7C" secondAttribute="bottom" constant="12" id="YNO-Xs-2Yp"/>
+                <constraint firstAttribute="trailing" secondItem="PNl-13-Hjb" secondAttribute="trailing" id="YwO-hf-B2U"/>
+                <constraint firstItem="PNl-13-Hjb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a3y-6z-1oL"/>
+                <constraint firstItem="kho-2v-od9" firstAttribute="top" secondItem="ghE-or-4TW" secondAttribute="bottom" constant="12" id="cTZ-J0-d11"/>
+                <constraint firstItem="uhN-V7-ed7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="ce7-SB-rZf"/>
+                <constraint firstItem="uhN-V7-ed7" firstAttribute="leading" secondItem="ghE-or-4TW" secondAttribute="trailing" constant="12" id="dY6-Bg-Vd0"/>
+                <constraint firstItem="kho-2v-od9" firstAttribute="top" secondItem="uhN-V7-ed7" secondAttribute="bottom" constant="12" id="dyZ-Wz-xpV"/>
+                <constraint firstItem="5Yt-Mc-M3g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="fKD-Dx-Pms"/>
+                <constraint firstAttribute="trailing" secondItem="L10-BL-e2S" secondAttribute="trailing" constant="12" id="g1N-mN-Dc2"/>
+                <constraint firstItem="kho-2v-od9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gXb-Xz-pjQ"/>
+                <constraint firstItem="5Yt-Mc-M3g" firstAttribute="top" secondItem="PNl-13-Hjb" secondAttribute="bottom" constant="12" id="ikH-kj-cK9"/>
+                <constraint firstItem="BcH-Dh-H7C" firstAttribute="top" secondItem="kho-2v-od9" secondAttribute="bottom" constant="12" id="l90-rP-6eF"/>
+                <constraint firstItem="kho-2v-od9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="qBs-4U-XMM"/>
+                <constraint firstAttribute="trailing" secondItem="BvM-pU-Ifl" secondAttribute="trailing" constant="12" id="qfI-vS-dAh"/>
+                <constraint firstAttribute="trailing" secondItem="kho-2v-od9" secondAttribute="trailing" id="tMa-Kn-Cub"/>
+                <constraint firstItem="L10-BL-e2S" firstAttribute="leading" secondItem="5Yt-Mc-M3g" secondAttribute="trailing" constant="12" id="xIQ-8e-2nq"/>
+                <constraint firstItem="PNl-13-Hjb" firstAttribute="top" secondItem="BvM-pU-Ifl" secondAttribute="bottom" constant="12" id="zFn-Ji-GOz"/>
+                <constraint firstAttribute="bottom" secondItem="5Yt-Mc-M3g" secondAttribute="bottom" constant="12" id="zVp-kx-DKr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="txfRegisterAccount" destination="BvM-pU-Ifl" id="Yu1-mI-bOj"/>
+                <outlet property="txfRegisterName" destination="uhN-V7-ed7" id="7Sf-PV-APz"/>
+                <outlet property="txfRegisterPwd" destination="L10-BL-e2S" id="DEO-J0-IpD"/>
+            </connections>
+            <point key="canvasLocation" x="184" y="291"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_project_activity" width="25" height="25"/>
+        <image name="nav_project_member" width="25" height="25"/>
+        <image name="nav_tweet_hot" width="25" height="25"/>
+    </resources>
+</document>

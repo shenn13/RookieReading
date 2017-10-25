@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BookTextHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="pHX-iB-mJU">
+                    <rect key="frame" x="112" y="10" width="96" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pHX-iB-mJU" secondAttribute="height" multiplier="0.8" id="lux-Rq-2Bg"/>
+                        <constraint firstAttribute="height" constant="120" id="tUK-b3-24P"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="书名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iO1-MQ-eQU">
+                    <rect key="frame" x="12" y="140" width="296" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="dOW-LC-9i6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.70196078429999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-sj-CC0">
+                    <rect key="frame" x="12" y="173.5" width="296" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="zQx-Bx-wbV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPZ-pq-F5v">
+                    <rect key="frame" x="0.0" y="216" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4T-si-2uR">
+                            <rect key="frame" x="0.0" y="0.0" width="106.5" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="目录" image="reader_menu">
+                                <color key="titleColor" red="0.20000000000000001" green="0.70196078429999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuClickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="g40-BK-a3Z"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9x-bA-wVr">
+                            <rect key="frame" x="106.5" y="0.0" width="107" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="阅读" image="reader_look">
+                                <color key="titleColor" red="0.20000000000000001" green="0.70196078429999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="readerClickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="eYG-ia-sWS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5A-eQ-MOi">
+                            <rect key="frame" x="213.5" y="0.0" width="106.5" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="分享" image="reader_share">
+                                <color key="titleColor" red="0.20000000000000001" green="0.70196078429999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="shareClickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="w68-AK-s2k"/>
+                            </connections>
+                        </button>
+                        <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ury-qJ-cba" userLabel="topLine">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="ghP-Py-bST"/>
+                            </constraints>
+                        </view>
+                        <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFs-dL-PK6" userLabel="leftLine">
+                            <rect key="frame" x="106.5" y="10.5" width="0.5" height="23.5"/>
+                            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="0.5" id="IMA-ww-tHc"/>
+                            </constraints>
+                        </view>
+                        <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Lu-EM-k5R" userLabel="rightLine">
+                            <rect key="frame" x="213" y="10" width="0.5" height="24"/>
+                            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="0.5" id="IA3-4x-QX3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ury-qJ-cba" firstAttribute="leading" secondItem="JPZ-pq-F5v" secondAttribute="leading" id="04c-Ko-Srl"/>
+                        <constraint firstItem="5Lu-EM-k5R" firstAttribute="top" secondItem="JPZ-pq-F5v" secondAttribute="top" constant="10" id="7x1-Pd-UMm"/>
+                        <constraint firstItem="V5A-eQ-MOi" firstAttribute="width" secondItem="h4T-si-2uR" secondAttribute="width" id="9su-cf-gz6"/>
+                        <constraint firstItem="V5A-eQ-MOi" firstAttribute="centerY" secondItem="JPZ-pq-F5v" secondAttribute="centerY" id="AQz-Oq-unS"/>
+                        <constraint firstItem="Ury-qJ-cba" firstAttribute="top" secondItem="JPZ-pq-F5v" secondAttribute="top" id="ELz-DA-stJ"/>
+                        <constraint firstAttribute="bottom" secondItem="h4T-si-2uR" secondAttribute="bottom" id="EY7-pd-4BW"/>
+                        <constraint firstItem="h4T-si-2uR" firstAttribute="leading" secondItem="JPZ-pq-F5v" secondAttribute="leading" id="G12-1K-1HV"/>
+                        <constraint firstAttribute="bottom" secondItem="5Lu-EM-k5R" secondAttribute="bottom" constant="10" id="HNg-SL-zE2"/>
+                        <constraint firstItem="oFs-dL-PK6" firstAttribute="leading" secondItem="h4T-si-2uR" secondAttribute="trailing" id="IdH-Q0-aTu"/>
+                        <constraint firstItem="V5A-eQ-MOi" firstAttribute="height" secondItem="h4T-si-2uR" secondAttribute="height" id="KAT-qD-1wy"/>
+                        <constraint firstItem="n9x-bA-wVr" firstAttribute="leading" secondItem="h4T-si-2uR" secondAttribute="trailing" id="KLJ-W2-F6i"/>
+                        <constraint firstItem="V5A-eQ-MOi" firstAttribute="leading" secondItem="5Lu-EM-k5R" secondAttribute="trailing" id="LdG-4l-h29"/>
+                        <constraint firstItem="V5A-eQ-MOi" firstAttribute="leading" secondItem="n9x-bA-wVr" secondAttribute="trailing" id="PQd-YB-VtS"/>
+                        <constraint firstAttribute="bottom" secondItem="oFs-dL-PK6" secondAttribute="bottom" constant="10" id="Qrg-vW-hfz"/>
+                        <constraint firstItem="h4T-si-2uR" firstAttribute="centerY" secondItem="JPZ-pq-F5v" secondAttribute="centerY" id="SyK-Wf-M2J"/>
+                        <constraint firstAttribute="bottom" secondItem="V5A-eQ-MOi" secondAttribute="bottom" id="Wtu-xI-d5w"/>
+                        <constraint firstItem="n9x-bA-wVr" firstAttribute="width" secondItem="h4T-si-2uR" secondAttribute="width" id="Y9C-KD-bGL"/>
+                        <constraint firstAttribute="trailing" secondItem="V5A-eQ-MOi" secondAttribute="trailing" id="bgJ-be-IMH"/>
+                        <constraint firstItem="n9x-bA-wVr" firstAttribute="centerX" secondItem="JPZ-pq-F5v" secondAttribute="centerX" id="cFX-1p-Xil"/>
+                        <constraint firstItem="oFs-dL-PK6" firstAttribute="top" secondItem="Ury-qJ-cba" secondAttribute="bottom" constant="10" id="dcI-GP-UH9"/>
+                        <constraint firstItem="n9x-bA-wVr" firstAttribute="centerY" secondItem="JPZ-pq-F5v" secondAttribute="centerY" id="fNU-Xp-dPy"/>
+                        <constraint firstItem="n9x-bA-wVr" firstAttribute="height" secondItem="h4T-si-2uR" secondAttribute="height" id="gAe-FT-fH3"/>
+                        <constraint firstItem="V5A-eQ-MOi" firstAttribute="top" secondItem="JPZ-pq-F5v" secondAttribute="top" id="iIF-Eq-PZS"/>
+                        <constraint firstAttribute="height" constant="44" id="jk8-84-PlH"/>
+                        <constraint firstAttribute="trailing" secondItem="Ury-qJ-cba" secondAttribute="trailing" id="oPQ-Z5-bKN"/>
+                        <constraint firstItem="h4T-si-2uR" firstAttribute="top" secondItem="JPZ-pq-F5v" secondAttribute="top" id="sjH-0v-Pl1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JPZ-pq-F5v" secondAttribute="bottom" id="0dX-bS-HXY"/>
+                <constraint firstAttribute="trailing" secondItem="JPZ-pq-F5v" secondAttribute="trailing" id="A6i-ca-LBv"/>
+                <constraint firstItem="iO1-MQ-eQU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EY8-s7-iUb"/>
+                <constraint firstItem="Vvs-sj-CC0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="G3d-ji-KrW"/>
+                <constraint firstItem="Vvs-sj-CC0" firstAttribute="top" secondItem="iO1-MQ-eQU" secondAttribute="bottom" constant="8" id="LF4-sT-8QA"/>
+                <constraint firstItem="iO1-MQ-eQU" firstAttribute="top" secondItem="pHX-iB-mJU" secondAttribute="bottom" constant="10" id="ScU-k5-UTx"/>
+                <constraint firstItem="iO1-MQ-eQU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="ZKE-uf-mvJ"/>
+                <constraint firstItem="pHX-iB-mJU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dr4-X4-Gta"/>
+                <constraint firstAttribute="trailing" secondItem="iO1-MQ-eQU" secondAttribute="trailing" constant="12" id="ouG-Qq-g1F"/>
+                <constraint firstItem="JPZ-pq-F5v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rmU-PC-rVH"/>
+                <constraint firstItem="pHX-iB-mJU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="umj-K0-bfS"/>
+                <constraint firstAttribute="trailing" secondItem="Vvs-sj-CC0" secondAttribute="trailing" constant="12" id="xiQ-49-IlQ"/>
+                <constraint firstItem="Vvs-sj-CC0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yTC-o0-pBN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bookAuthor" destination="Vvs-sj-CC0" id="t85-WH-EIC"/>
+                <outlet property="bookName" destination="iO1-MQ-eQU" id="Gv6-ov-PBp"/>
+                <outlet property="bottomView" destination="JPZ-pq-F5v" id="9Ml-pj-2gn"/>
+                <outlet property="btnMenuList" destination="h4T-si-2uR" id="pp7-3j-EoK"/>
+                <outlet property="btnReader" destination="n9x-bA-wVr" id="o8W-l5-kYS"/>
+                <outlet property="btnShare" destination="V5A-eQ-MOi" id="HQC-OB-h2d"/>
+                <outlet property="showImage" destination="pHX-iB-mJU" id="eWm-xn-3H9"/>
+            </connections>
+            <point key="canvasLocation" x="1" y="91"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder" width="80" height="60"/>
+        <image name="reader_look" width="20" height="20"/>
+        <image name="reader_menu" width="20" height="20"/>
+        <image name="reader_share" width="20" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

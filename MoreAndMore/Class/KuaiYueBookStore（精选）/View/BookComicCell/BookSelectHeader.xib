@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SECTION_IDENTIFIER" id="U6b-Vx-4bR" customClass="BookSelectHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jg1-Gy-vhD">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="JSM-wh-Xwd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="简介">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnProductClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="sNa-zS-llq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDY-jZ-eqc">
+                    <rect key="frame" x="160" y="0.0" width="160" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="内容">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnContentClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Ovy-bN-wRo"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cvr-jh-30T">
+                    <rect key="frame" x="160" y="14" width="1" height="16"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="kah-8V-uVR"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jg1-Gy-vhD" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="8KA-hh-iWw"/>
+                <constraint firstItem="IDY-jZ-eqc" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Ghy-Hh-4vY"/>
+                <constraint firstAttribute="trailing" secondItem="IDY-jZ-eqc" secondAttribute="trailing" id="Lg8-D9-8US"/>
+                <constraint firstItem="cvr-jh-30T" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="Q0d-vn-N7K"/>
+                <constraint firstItem="IDY-jZ-eqc" firstAttribute="height" secondItem="jg1-Gy-vhD" secondAttribute="height" id="bxo-JV-WL2"/>
+                <constraint firstAttribute="bottom" secondItem="cvr-jh-30T" secondAttribute="bottom" constant="14" id="crq-ps-EhC"/>
+                <constraint firstItem="cvr-jh-30T" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="14" id="dv4-r2-hKd"/>
+                <constraint firstItem="IDY-jZ-eqc" firstAttribute="leading" secondItem="jg1-Gy-vhD" secondAttribute="trailing" id="eSH-8f-WrR"/>
+                <constraint firstItem="jg1-Gy-vhD" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="fAB-IG-Mh8"/>
+                <constraint firstItem="IDY-jZ-eqc" firstAttribute="width" secondItem="jg1-Gy-vhD" secondAttribute="width" id="mZi-Uu-JMg"/>
+                <constraint firstItem="jg1-Gy-vhD" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="nL9-QU-lVS"/>
+            </constraints>
+            <connections>
+                <outlet property="btnContent" destination="IDY-jZ-eqc" id="FOC-UD-9Mw"/>
+                <outlet property="btnProduct" destination="jg1-Gy-vhD" id="vjj-af-8w3"/>
+                <outlet property="lineOne" destination="cvr-jh-30T" id="mDa-0Y-E2u"/>
+            </connections>
+            <point key="canvasLocation" x="-58" y="5"/>
+        </collectionReusableView>
+    </objects>
+</document>

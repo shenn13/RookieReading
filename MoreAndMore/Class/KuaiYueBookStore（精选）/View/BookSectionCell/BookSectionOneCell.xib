@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FIRST_COLLECTION" id="lWS-86-VNo" customClass="BookSectionOneCell">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="93" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CcR-Jq-XZW">
+                        <rect key="frame" x="0.0" y="0.0" width="93" height="104"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z98-a1-XvE">
+                        <rect key="frame" x="0.0" y="108" width="93" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Ebq-Nt-HOc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qei-EK-AZQ">
+                        <rect key="frame" x="0.0" y="128" width="93" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="9Er-MO-Q4c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="z98-a1-XvE" firstAttribute="leading" secondItem="lWS-86-VNo" secondAttribute="leading" id="5NB-1H-Uis"/>
+                <constraint firstItem="CcR-Jq-XZW" firstAttribute="leading" secondItem="lWS-86-VNo" secondAttribute="leading" id="L1T-cq-EhD"/>
+                <constraint firstItem="Qei-EK-AZQ" firstAttribute="leading" secondItem="lWS-86-VNo" secondAttribute="leading" id="QQt-nW-zXq"/>
+                <constraint firstAttribute="trailing" secondItem="z98-a1-XvE" secondAttribute="trailing" id="SYR-1e-mPW"/>
+                <constraint firstItem="z98-a1-XvE" firstAttribute="top" secondItem="CcR-Jq-XZW" secondAttribute="bottom" constant="4" id="Tcz-Es-OzP"/>
+                <constraint firstAttribute="trailing" secondItem="Qei-EK-AZQ" secondAttribute="trailing" id="XRb-oy-jDd"/>
+                <constraint firstAttribute="trailing" secondItem="CcR-Jq-XZW" secondAttribute="trailing" id="ebk-1C-zY4"/>
+                <constraint firstItem="CcR-Jq-XZW" firstAttribute="top" secondItem="lWS-86-VNo" secondAttribute="top" id="n0d-Gq-ryf"/>
+                <constraint firstItem="Qei-EK-AZQ" firstAttribute="top" secondItem="z98-a1-XvE" secondAttribute="bottom" id="u8Z-TL-N4n"/>
+                <constraint firstAttribute="bottom" secondItem="Qei-EK-AZQ" secondAttribute="bottom" id="x3g-Dk-6B0"/>
+            </constraints>
+            <size key="customSize" width="96" height="143"/>
+            <connections>
+                <outlet property="labDetail" destination="Qei-EK-AZQ" id="KKB-yZ-bLt"/>
+                <outlet property="labTitle" destination="z98-a1-XvE" id="5yS-ZB-pZd"/>
+                <outlet property="showImage" destination="CcR-Jq-XZW" id="FhC-B1-AgB"/>
+            </connections>
+            <point key="canvasLocation" x="-55.5" y="178.5"/>
+        </collectionViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="READER_TOOL" id="KGk-i7-Jjw" customClass="ReaderToolCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOs-Mc-9CB">
+                        <rect key="frame" x="-10" y="17" width="150" height="45.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="上一章">
+                            <color key="titleColor" red="0.20000000000000001" green="0.70196078429999997" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="disabled" title="没有了！">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="changeComicAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CK8-lB-ruW"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3x-4e-bvZ">
+                        <rect key="frame" x="180" y="17" width="150" height="45.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="下一章">
+                            <color key="titleColor" red="0.20000000000000001" green="0.70196078429999997" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="disabled">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="changeComicAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bra-Cf-Y5u"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A3x-4e-bvZ" firstAttribute="leading" secondItem="sOs-Mc-9CB" secondAttribute="trailing" constant="40" id="7c8-wI-tmi"/>
+                    <constraint firstItem="sOs-Mc-9CB" firstAttribute="centerY" secondItem="A3x-4e-bvZ" secondAttribute="centerY" id="Fb9-9J-izz"/>
+                    <constraint firstAttribute="bottom" secondItem="A3x-4e-bvZ" secondAttribute="bottom" constant="17" id="IV9-Kd-N0k"/>
+                    <constraint firstAttribute="trailing" secondItem="A3x-4e-bvZ" secondAttribute="trailing" constant="-10" id="KKN-cz-l6Z"/>
+                    <constraint firstItem="A3x-4e-bvZ" firstAttribute="height" secondItem="sOs-Mc-9CB" secondAttribute="height" id="TFn-nM-qdS"/>
+                    <constraint firstItem="A3x-4e-bvZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YEf-3J-OTy"/>
+                    <constraint firstItem="sOs-Mc-9CB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="iMv-sh-MaH"/>
+                    <constraint firstItem="A3x-4e-bvZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="iuT-nQ-jdE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sOs-Mc-9CB" secondAttribute="bottom" constant="8" id="mok-ts-Q0H"/>
+                    <constraint firstItem="sOs-Mc-9CB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sPu-Id-LN0"/>
+                    <constraint firstItem="A3x-4e-bvZ" firstAttribute="width" secondItem="sOs-Mc-9CB" secondAttribute="width" id="we1-K5-Jx6"/>
+                    <constraint firstItem="sOs-Mc-9CB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-10" id="yIC-zD-nJD"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="iMv-sh-MaH"/>
+                        <exclude reference="mok-ts-Q0H"/>
+                        <exclude reference="sPu-Id-LN0"/>
+                        <exclude reference="YEf-3J-OTy"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="lastComic" destination="sOs-Mc-9CB" id="MDf-Vj-X7S"/>
+                <outlet property="nextComic" destination="A3x-4e-bvZ" id="3lP-vU-fHi"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="332.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BOOKTEXT_TWO" id="gTV-IL-0wX" customClass="BookTextSectionTwoCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="书名" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAS-ze-fMf">
+                        <rect key="frame" x="0.0" y="112" width="90" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="pJb-zV-UHj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="FIa-nI-OKz">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="112"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="FIa-nI-OKz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1OV-6F-fDp"/>
+                <constraint firstAttribute="trailing" secondItem="FIa-nI-OKz" secondAttribute="trailing" id="HVM-Kn-BSy"/>
+                <constraint firstAttribute="trailing" secondItem="DAS-ze-fMf" secondAttribute="trailing" id="Jor-h8-XC3"/>
+                <constraint firstItem="FIa-nI-OKz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SFl-0l-5CL"/>
+                <constraint firstItem="DAS-ze-fMf" firstAttribute="top" secondItem="FIa-nI-OKz" secondAttribute="bottom" id="ac3-sa-fAL"/>
+                <constraint firstAttribute="bottom" secondItem="DAS-ze-fMf" secondAttribute="bottom" id="mln-Rc-rH6"/>
+                <constraint firstItem="DAS-ze-fMf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qCq-WH-q2x"/>
+            </constraints>
+            <connections>
+                <outlet property="labBookName" destination="DAS-ze-fMf" id="SAO-CM-dBK"/>
+                <outlet property="showImage" destination="FIa-nI-OKz" id="kef-Lf-qp4"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="301"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="80" height="60"/>
+    </resources>
+</document>

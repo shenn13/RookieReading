@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FOURTH_COLLECTION" id="gTV-IL-0wX" customClass="BookSectionFourCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JtO-Dv-dvi">
+                        <rect key="frame" x="0.0" y="0.0" width="96" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JtO-Dv-dvi" secondAttribute="height" multiplier="0.8" id="PNZ-xO-7se"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="书名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QV-NI-a36">
+                        <rect key="frame" x="106" y="10" width="204" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofW-ec-iJp">
+                        <rect key="frame" x="106" y="36" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOx-C2-gQo">
+                        <rect key="frame" x="106" y="57" width="45" height="20"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="PqL-is-nwR"/>
+                            <constraint firstAttribute="height" constant="20" id="eaB-v0-2vE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="标签"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="简介" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQt-Qc-H0X">
+                        <rect key="frame" x="106" y="77" width="204" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ofW-ec-iJp" firstAttribute="top" secondItem="3QV-NI-a36" secondAttribute="bottom" constant="5" id="3bC-sW-R1X"/>
+                <constraint firstItem="ofW-ec-iJp" firstAttribute="leading" secondItem="JtO-Dv-dvi" secondAttribute="trailing" constant="10" id="5TY-xU-yIZ"/>
+                <constraint firstAttribute="trailing" secondItem="VQt-Qc-H0X" secondAttribute="trailing" constant="10" id="7wP-0X-50c"/>
+                <constraint firstItem="JtO-Dv-dvi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CxZ-3L-d9d"/>
+                <constraint firstItem="zOx-C2-gQo" firstAttribute="top" secondItem="ofW-ec-iJp" secondAttribute="bottom" constant="5" id="Gjs-yu-GNj"/>
+                <constraint firstItem="JtO-Dv-dvi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KnV-hQ-0CL"/>
+                <constraint firstItem="3QV-NI-a36" firstAttribute="leading" secondItem="JtO-Dv-dvi" secondAttribute="trailing" constant="10" id="N3s-Li-6Nu"/>
+                <constraint firstItem="zOx-C2-gQo" firstAttribute="leading" secondItem="JtO-Dv-dvi" secondAttribute="trailing" constant="10" id="W7e-Hx-m4u"/>
+                <constraint firstAttribute="trailing" secondItem="3QV-NI-a36" secondAttribute="trailing" constant="10" id="euh-LL-uwm"/>
+                <constraint firstItem="VQt-Qc-H0X" firstAttribute="top" secondItem="zOx-C2-gQo" secondAttribute="bottom" id="k0B-KA-vIf"/>
+                <constraint firstItem="3QV-NI-a36" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="otX-UR-dbh"/>
+                <constraint firstAttribute="bottom" secondItem="VQt-Qc-H0X" secondAttribute="bottom" id="rYP-xU-t4e"/>
+                <constraint firstItem="VQt-Qc-H0X" firstAttribute="leading" secondItem="JtO-Dv-dvi" secondAttribute="trailing" constant="10" id="s4A-PT-3QW"/>
+                <constraint firstAttribute="bottom" secondItem="JtO-Dv-dvi" secondAttribute="bottom" id="s5j-pU-eWg"/>
+            </constraints>
+            <size key="customSize" width="50" height="97"/>
+            <connections>
+                <outlet property="bookAuthor" destination="ofW-ec-iJp" id="phN-fM-f00"/>
+                <outlet property="bookName" destination="3QV-NI-a36" id="teI-XQ-Qrl"/>
+                <outlet property="bookProduct" destination="VQt-Qc-H0X" id="2sg-5J-VWB"/>
+                <outlet property="bookTag" destination="zOx-C2-gQo" id="4cB-eu-MrS"/>
+                <outlet property="showImage" destination="JtO-Dv-dvi" id="R7R-D8-sZY"/>
+            </connections>
+            <point key="canvasLocation" x="43" y="38"/>
+        </collectionViewCell>
+    </objects>
+</document>

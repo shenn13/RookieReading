@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MY_BOOKONE" id="gTV-IL-0wX" customClass="MyBookCellOne">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                <subviews>
+                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="nte-w5-JWk">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="105"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_tag_tuijian" translatesAutoresizingMaskIntoConstraints="NO" id="HNR-4o-ple">
+                        <rect key="frame" x="65" y="0.0" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="dn1-Ng-vPk"/>
+                            <constraint firstAttribute="height" constant="35" id="eCk-Jr-dv1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="书名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZa-Mc-Ou3">
+                        <rect key="frame" x="0.0" y="105" width="100" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="KUj-YJ-nPz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNF-L0-RQv">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="105"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwJ-JH-sVt">
+                                <rect key="frame" x="10" y="10" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="84O-c9-5LG"/>
+                                    <constraint firstAttribute="height" constant="24" id="nGs-Nz-uP8"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="cell_checkmark"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="CwJ-JH-sVt" firstAttribute="leading" secondItem="KNF-L0-RQv" secondAttribute="leading" constant="10" id="8Z4-9p-uEy"/>
+                            <constraint firstItem="CwJ-JH-sVt" firstAttribute="top" secondItem="KNF-L0-RQv" secondAttribute="top" constant="10" id="Gyu-Wc-bm8"/>
+                            <constraint firstAttribute="width" secondItem="KNF-L0-RQv" secondAttribute="height" multiplier="15:8" id="WUY-gE-adO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WUY-gE-adO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="KNF-L0-RQv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="19T-UA-Kkw"/>
+                <constraint firstAttribute="trailing" secondItem="nte-w5-JWk" secondAttribute="trailing" id="AQB-GM-Y88"/>
+                <constraint firstItem="nte-w5-JWk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BSW-qt-WE5"/>
+                <constraint firstItem="KNF-L0-RQv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FPo-2D-P7T"/>
+                <constraint firstAttribute="trailing" secondItem="KNF-L0-RQv" secondAttribute="trailing" id="PRy-dH-Dcm"/>
+                <constraint firstAttribute="trailing" secondItem="BZa-Mc-Ou3" secondAttribute="trailing" id="Pnl-Ne-TEP"/>
+                <constraint firstAttribute="bottom" secondItem="KNF-L0-RQv" secondAttribute="bottom" id="U0S-98-Ej3"/>
+                <constraint firstAttribute="bottom" secondItem="BZa-Mc-Ou3" secondAttribute="bottom" id="VcS-yC-2SZ"/>
+                <constraint firstItem="BZa-Mc-Ou3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W0p-ZQ-srf"/>
+                <constraint firstAttribute="trailing" secondItem="HNR-4o-ple" secondAttribute="trailing" id="eeP-TK-fUF"/>
+                <constraint firstItem="BZa-Mc-Ou3" firstAttribute="top" secondItem="KNF-L0-RQv" secondAttribute="bottom" id="fkX-C9-Bxj"/>
+                <constraint firstAttribute="bottom" secondItem="nte-w5-JWk" secondAttribute="bottom" id="fmF-gU-ecg"/>
+                <constraint firstItem="nte-w5-JWk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hIY-5u-Xgt"/>
+                <constraint firstItem="HNR-4o-ple" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="l4s-Gv-6m5"/>
+                <constraint firstItem="BZa-Mc-Ou3" firstAttribute="top" secondItem="nte-w5-JWk" secondAttribute="bottom" id="lnF-H7-Xq3"/>
+            </constraints>
+            <size key="customSize" width="100" height="153"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="U0S-98-Ej3"/>
+                    <exclude reference="fmF-gU-ecg"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="EditView" destination="KNF-L0-RQv" id="rQp-5X-ncl"/>
+                <outlet property="btnChoose" destination="CwJ-JH-sVt" id="ncH-nL-3Rh"/>
+                <outlet property="labTitle" destination="BZa-Mc-Ou3" id="0JU-fh-mFp"/>
+                <outlet property="showImage" destination="nte-w5-JWk" id="syf-rE-pmM"/>
+                <outlet property="showTagImage" destination="HNR-4o-ple" id="bsk-ld-8Fa"/>
+            </connections>
+            <point key="canvasLocation" x="243" y="384"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="book_tag_tuijian" width="35" height="35"/>
+        <image name="cell_checkmark" width="22" height="22"/>
+        <image name="placeholder" width="80" height="60"/>
+    </resources>
+</document>
